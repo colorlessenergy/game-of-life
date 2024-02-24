@@ -6,6 +6,30 @@ body {
     margin: 0;
 }
 
+button {
+    border: none;
+
+    background-color: transparent;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+canvas {
+    cursor: pointer;
+}
+
+.start-button {
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+
+    background-color: #de3c4b;
+    color: #ffffff;
+    font-size: 24px;
+}
+
 .overflow-hidden {
     overflow: hidden;
 }
