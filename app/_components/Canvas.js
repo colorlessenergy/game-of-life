@@ -24,6 +24,10 @@ const Canvas = () => {
             let row = [];
             for (let j = 0; j < canvasRef.current.height; j += PIXEL_SIZE) {
                 row.push([i, j, false]);
+
+                const context = canvasRef.current.getContext('2d');
+                context.strokeStyle = '#735290';
+                context.strokeRect(i, j, PIXEL_SIZE, PIXEL_SIZE);
             }
 
             cols.push(row);
